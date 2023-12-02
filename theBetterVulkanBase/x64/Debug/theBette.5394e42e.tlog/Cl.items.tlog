@@ -1,3 +1,10 @@
 C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\first_app.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\first_app.obj
 C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\main.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\main.obj
+C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\simple_render_system.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\simple_render_system.obj
+C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\sve_renderer.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\sve_renderer.obj
+C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\sve_device.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\sve_device.obj
+C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\sve_game_object.hpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\sve_game_object.obj
+C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\sve_model.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\sve_model.obj
+C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\sve_pipeline.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\sve_pipeline.obj
+C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\sve_swap_chain.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\sve_swap_chain.obj
 C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\sve_window.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\sve_window.obj
