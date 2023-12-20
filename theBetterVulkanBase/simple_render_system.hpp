@@ -4,6 +4,8 @@
 #include "sve_game_object.hpp"
 #include "sve_pipeline.hpp"
 #include "sve_device.hpp"
+#include "sve_camera.hpp"
+#include "sve_frame_info.hpp"
 
 #include <memory>
 #include <vector>
@@ -19,8 +21,7 @@ namespace sve {
 		SimpleRenderSystem& operator=(const SimpleRenderSystem&) = delete;
 
 
-		void renderGameObjects(VkCommandBuffer commandBuffer, std::vector<SveGameObject> &gameObjects);
-
+		void renderGameObjects(FrameInfo &frameInfo, std::vector<SveGameObject> &gameObjects);
 
 	private:
 		void createPipelineLayout();

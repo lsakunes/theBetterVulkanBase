@@ -1,5 +1,6 @@
 ﻿  first_app.cpp
-  sve_renderer.cpp
+  sve_descriptors.cpp
+C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\sve_descriptors.cpp(193,68): warning C4267: 'argument': conversion from 'size_t' to 'uint32_t', possible loss of data
   Generating Code...
   main.cpp
 LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library

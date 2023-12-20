@@ -105,7 +105,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.268.0\Include;C:\Users\senuk\source\Graphics\Libraries\glfw-3.3.8.bin.WIN64\include;C:\Users\senuk\source\Graphics\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.268.0\Include;C:\Users\senuk\source\Graphics\Libraries\glfw-3.3.8.bin.WIN64\include;C:\Users\senuk\source\Graphics\Libraries\glm;C:\Users\senuk\source\Graphics\Libraries\tinyObjLoader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -123,7 +123,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.268.0\Include;C:\Users\senuk\source\Graphics\Libraries\glfw-3.3.8.bin.WIN64\include;C:\Users\senuk\source\Graphics\Libraries\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.268.0\Include;C:\Users\senuk\source\Graphics\Libraries\glfw-3.3.8.bin.WIN64\include;C:\Users\senuk\source\Graphics\Libraries\glm;C:\Users\senuk\source\Graphics\Libraries\tinyObjLoader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -136,11 +136,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="first_app.cpp" />
+    <ClCompile Include="keyboard_movement_controller.cpp" />
     <ClCompile Include="main.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\senuk\source\Graphics\Libraries\glm;C:\Users\senuk\source\Graphics\Libraries\glfw-3.3.8.bin.WIN64\include;C:\VulkanSDK\1.3.268.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\senuk\source\Graphics\Libraries\glm;C:\Users\senuk\source\Graphics\Libraries\glfw-3.3.8.bin.WIN64\include;C:\VulkanSDK\1.3.268.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="simple_render_system.cpp" />
+    <ClCompile Include="sve_buffer.cpp" />
+    <ClCompile Include="sve_camera.cpp" />
+    <ClCompile Include="sve_descriptors.cpp" />
     <ClCompile Include="sve_renderer.cpp" />
     <ClCompile Include="sve_device.cpp" />
     <ClCompile Include="sve_game_object.hpp" />
@@ -151,13 +155,22 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="first_app.hpp" />
+    <ClInclude Include="keyboard_movement_controller.hpp" />
     <ClInclude Include="simple_render_system.hpp" />
+    <ClInclude Include="sve_buffer.hpp" />
+    <ClInclude Include="sve_camera.hpp" />
+    <ClInclude Include="sve_descriptors.hpp" />
     <ClInclude Include="sve_device.hpp" />
+    <ClInclude Include="sve_frame_info.hpp" />
     <ClInclude Include="sve_model.hpp" />
     <ClInclude Include="sve_pipeline.hpp" />
     <ClInclude Include="sve_renderer.hpp" />
     <ClInclude Include="sve_swap_chain.hpp" />
+    <ClInclude Include="sve_utils.hpp" />
     <ClInclude Include="sve_window.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="notes.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

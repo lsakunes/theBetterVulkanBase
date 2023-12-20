@@ -20,6 +20,9 @@ namespace sve {
 		SveRenderer& operator=(const SveRenderer&) = delete;
 
 		VkRenderPass getSwapChainRenderPass() const { return sveSwapChain->getRenderPass(); }
+		float getAspectRatio() const {
+			return sveSwapChain->extentAspectRatio();
+		}
 		bool isFrameInProgress() const { return isFrameStarted; }
 		
 		VkCommandBuffer getCurrentCommandBuffer() const { 

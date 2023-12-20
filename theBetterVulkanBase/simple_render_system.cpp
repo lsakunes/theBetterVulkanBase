@@ -11,9 +11,8 @@
 namespace sve {
 
 	struct SimplePushConstantData {
-		glm::mat2 transform{1.f};
-		glm::vec2 offset;
-		alignas(16) glm::vec3 color;
+		glm::mat4 transform{1.f};
+		glm::mat4 modelMatrix{1.f};
 	};
 
 	SimpleRenderSystem::SimpleRenderSystem(SveDevice& device, VkRenderPass renderPass) : sveDevice{ device } {
@@ -61,19 +60,20 @@ namespace sve {
 
 
 
-	void SimpleRenderSystem::renderGameObjects(VkCommandBuffer commandBuffer, std::vector<SveGameObject>& gameObjects) {
-		svePipeline->bind(commandBuffer);
+	void SimpleRenderSystem::renderGameObjects(FrameInfo& frameInfo, std::vector<SveGameObject>& gameObjects) {
+		svePipeline->bind(frameInfo.commandBuffer);
+
+		auto projectionView = frameInfo.camera.getProjection() * frameInfo.camera.getView();
 
 		for (auto& obj : gameObjects) {
-			obj.transform2d.rotation = glm::mod(obj.transform2d.rotation + 0.01f, glm::two_pi<float>());
 			SimplePushConstantData push{};
-			push.offset = obj.transform2d.translation;
-			push.color = obj.color;
-			push.transform = obj.transform2d.mat2();
+			auto modelMatrix = obj.transform.mat4();
+			push.transform = projectionView * modelMatrix;
+			push.modelMatrix = modelMatrix;
 
-			vkCmdPushConstants(commandBuffer, pipelineLayout, VK_SHADER_STAGE_VERTEX_BIT | VK_SHADER_STAGE_FRAGMENT_BIT, 0, sizeof(SimplePushConstantData), &push);
-			obj.model->bind(commandBuffer);
-			obj.model->draw(commandBuffer);
+			vkCmdPushConstants(frameInfo.commandBuffer, pipelineLayout, VK_SHADER_STAGE_VERTEX_BIT | VK_SHADER_STAGE_FRAGMENT_BIT, 0, sizeof(SimplePushConstantData), &push);
+			obj.model->bind(frameInfo.commandBuffer);
+			obj.model->draw(frameInfo.commandBuffer);
 		}
 	}
 }

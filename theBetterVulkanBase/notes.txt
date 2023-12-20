@@ -1,0 +1,5 @@
+## for smaller models change index buffer type from uint32_t to something smaller for efficiency
+
+## check if the 3070 has CPU-accessible and device-local memory
+
+## use memory barrier instead of wait idle (single time command) for copy buffer in sveDevice

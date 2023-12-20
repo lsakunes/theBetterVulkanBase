@@ -1,6 +1,10 @@
 C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\first_app.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\first_app.obj
+C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\keyboard_movement_controller.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\keyboard_movement_controller.obj
 C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\main.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\main.obj
 C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\simple_render_system.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\simple_render_system.obj
+C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\sve_buffer.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\sve_buffer.obj
+C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\sve_camera.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\sve_camera.obj
+C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\sve_descriptors.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\sve_descriptors.obj
 C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\sve_renderer.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\sve_renderer.obj
 C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\sve_device.cpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\sve_device.obj
 C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\sve_game_object.hpp;C:\Users\senuk\source\repos\Vulkan\theBetterVulkanBase\theBetterVulkanBase\x64\Debug\sve_game_object.obj

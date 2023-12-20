@@ -5,6 +5,7 @@
 #include "sve_game_object.hpp"
 #include "sve_renderer.hpp"
 #include "sve_device.hpp"
+#include "sve_descriptors.hpp"
 
 #include <memory>
 #include <vector>
@@ -29,7 +30,10 @@ namespace sve {
 		SveWindow sveWindow{ WIDTH, HEIGHT, "Hello Vulkan" };
 		SveDevice sveDevice{ sveWindow };
 		SveRenderer sveRenderer{ sveWindow, sveDevice };
+
+		std::unique_ptr<SveDescriptorPool> globalPool{};
 		std::vector<SveGameObject> gameObjects;
+		float MAX_FRAME_TIME{ 0.04f };
 	};
 }
 
